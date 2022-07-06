@@ -23,7 +23,7 @@ const makeIndividualCards = () => {
 		alt="${pokemon.name}"
 	  />
 	  <div class="card__content">
-		<h2 class="card__heading">${pokemon.name}</h2>
+		<h2 class="card__heading">${pokemon.name.charAt(0).toUpperCase()}${pokemon.name.slice(1)}</h2>
 		<p class="card__text">${pokemon.name} (#${pokemon.id})
          is a ${displayType(pokemon.types)} type pokemon.</p>
 	  </div>
