@@ -9,8 +9,6 @@ const displayType = (type) => {
     } else {return `${type[0]} & ${type[1]}`};
 }
     
-
-
 //Making a function to produce each card and then replicate might be easier than going directly in container
 const makeIndividualCards = () => {
   let IndividualCardsHtml = "";
@@ -34,7 +32,7 @@ const makeIndividualCards = () => {
   return IndividualCardsHtml;
 };
 
-//This should make it actually appear
+//Make it actually appear
 cardContainer.innerHTML = makeIndividualCards();
 
 
