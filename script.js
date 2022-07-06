@@ -2,6 +2,14 @@ import pokemonArray from "./data/pokemon.js";
 
 const cardContainer = document.querySelector(".card-container");
 
+//Function for reading type array whether its 1 or 2 
+const displayType = (type) => {
+    if (type.length == 1) {
+    return type[0];
+    } else {return `${type[0]} & ${type[1]}`};
+}
+    
+
 
 //Making a function to produce each card and then replicate might be easier than going directly in container
 const makeIndividualCards = () => {
