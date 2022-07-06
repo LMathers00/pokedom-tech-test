@@ -25,7 +25,7 @@ const makeIndividualCards = () => {
 	  <div class="card__content">
 		<h2 class="card__heading">${pokemon.name}</h2>
 		<p class="card__text">${pokemon.name} (#${pokemon.id})
-         is a TBD type pokemon.</p>
+         is a ${displayType(pokemon.types)} type pokemon.</p>
 	  </div>
 	</div>`;
 
